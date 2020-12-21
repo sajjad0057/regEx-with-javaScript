@@ -5,65 +5,38 @@
 let re;
 let str;
 
-// Shorthand Character classes : 
 
-re = /\w/; // matches Word Character - alpha numeric or _
+// Check Postal Code :
 
-str = "sajjad"
-str ="3435"
-str = "_"
-str = "$"
+re = /^[0-9]{4}$/
+
+str = "4040"
+
+// Check Phone Number :
+
+re = /^01[0-9]{9}$/
+re = /^(\+88)?01[0-9]{9}$/
+re = /^(\+)?(88)?01[0-9]{9}$/
 
 
-
-re = /\w+/; //one or more;
-
-str = "sajjad hossain"
-
-re = /\W/ ; // Non word Character ;
-re = /\W+/; //One or more \;
-
-str = 'fdgjdfg'
-str = "^&(*(&&^  |**"  // matched jusr non word character;
-
-re = /\d/ ; // digit;
-re = /\d+/; //one or more digit character;
-re = /\D/ ; // non digit;
-re = /\D+/;
-re = /\s/ ; // match white space;
-re = /\S/; // Match non white space;
-re = /hello\b/; //word boundary  
-re = /\bhello\b/; 
+str = "01774354369"
+str = "8801774354369"
+str = "+8801774354369"
 
 
 
+// Check Email address :
+//sajjadhossain0057@gmail.com
 
+re = /^([a-zA-Z0-9])+$/
+re = /^([a-zA-Z0-9]+\.?_?)+[^\.]@$/
+re = /^([a-zA-Z0-9]+\.?_?)+[^\.]@([a-zA-Z0-9]+\.?_?)+[^\.]$/
 
-str = "^&(*(&&^  |**" 
-str = " fjggk kfl"
-str = "fdjs"
-str = "hello"
-str = "hello    7586"
-str = "hello4r"
-str = "hello "
-
-
-// Assertions :
-
-re = /x(?=y)/; // matched x only if x is before y
-re = /x(?!y)/;  // matched if don't have x before y
-
-
-
-
-str = "x"
-str = "fkjdjxfkj"
-str = "ghfhy"
-
-
-
-
-
+str="sajjadhossain0057"
+str="sajjadhossain0057._"
+str="sajjadhossain0057._fdg."
+str="sajjadhossain0057._fdg@"
+str = "sajjadhossain0057@gmail.com"
 
 
 
