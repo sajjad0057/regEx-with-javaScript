@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regex Practice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <h1>Practice Regex : </h1>
-    
-    <script src="script.js"></script>
+
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Regex Tester
+                </h1>
+                <h2 class="subtitle">
+                    Super Fun Project
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="box is-flex is-flex-direction-column">
+                <div class="field">
+                    <label class="label">Input String</label>
+                    <div class="control">
+                        <input type="text" id="istring" class="input is-primary" placeholder="Input String"
+                            value="sajjadhossain0057@gmail.com">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Regex</label>
+                    <div class="control">
+                        <input type="text" id="rstring" class="input is-primary" placeholder="Test regex"
+                            value="\s*(.*)@(.*)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <article class="message">
+                <div class="message-header">
+                    <p>Output</p>
+                </div>
+                <div class="message-body" id="parent">
+
+                </div>
+            </article>
+        </div>
+    </section>
 </body>
+
 </html>
